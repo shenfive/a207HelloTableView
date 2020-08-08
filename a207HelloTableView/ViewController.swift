@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
 
     @IBOutlet weak var myTableView: UITableView!
@@ -16,19 +16,28 @@ class ViewController: UIViewController,UITableViewDataSource {
         super.viewDidLoad()
         
         myTableView.dataSource = self
+        myTableView.delegate = self
         
     }
 
-    
+    //MARK: TableView Delegate && DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5000
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! MyTableViewCell
+        cell.name.text = "MyName"
+        cell.tel.text = "12345678789"
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    
+    
     
 
 }
