@@ -21,7 +21,6 @@ class InputViewController: UIViewController {
         if let theAddBook = userdefault.value(forKey: "addbook") as? [[String:String]]{
             addbook = theAddBook
             print(addbook)
-            
         }
    
     }

@@ -12,23 +12,32 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
 
 
     @IBOutlet weak var myTableView: UITableView!
+    var addbook:[[String:String]] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         myTableView.dataSource = self
         myTableView.delegate = self
         
+        let userdefault = UserDefaults.standard
+        if let theAddBook = userdefault.value(forKey: "addbook") as? [[String:String]]{
+            addbook = theAddBook
+            print(addbook)
+        }
+        
+        
     }
 
     //MARK: TableView Delegate && DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5000
+        return addbook.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! MyTableViewCell
-        cell.name.text = "MyName"
-        cell.tel.text = "12345678789"
+        cell.name.text = addbook[indexPath.row]["name"]
+        cell.tel.text = addbook[indexPath.row]["tel"]
         
         return cell
     }
