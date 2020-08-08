@@ -20,15 +20,26 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         myTableView.dataSource = self
         myTableView.delegate = self
         
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillApper")
         let userdefault = UserDefaults.standard
         if let theAddBook = userdefault.value(forKey: "addbook") as? [[String:String]]{
             addbook = theAddBook
-            print(addbook)
+            myTableView.reloadData()
         }
-        
-        
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidApper")
+    }
+    
+    
+    
     //MARK: TableView Delegate && DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return addbook.count

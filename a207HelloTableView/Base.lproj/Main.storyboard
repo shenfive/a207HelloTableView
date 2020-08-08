@@ -106,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名稱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iop-Nd-vdV">
-                                <rect key="frame" x="30" y="84" width="354" height="34"/>
+                                <rect key="frame" x="30" y="124" width="354" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="i2h-HT-W4P"/>
                                 </constraints>
@@ -114,7 +114,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="電話" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09Y-OJ-b0F">
-                                <rect key="frame" x="30" y="138" width="354" height="34"/>
+                                <rect key="frame" x="30" y="178" width="354" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="7xD-B4-9Ib"/>
                                 </constraints>
@@ -122,7 +122,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0g-fI-ciI">
-                                <rect key="frame" x="319" y="197" width="65" height="37"/>
+                                <rect key="frame" x="319" y="237" width="65" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="AES-aZ-uhN"/>
                                     <constraint firstAttribute="width" constant="65" id="Vxt-jI-HeY"/>
@@ -142,7 +142,7 @@
                             <constraint firstItem="tQL-Bl-nyr" firstAttribute="trailing" secondItem="e0g-fI-ciI" secondAttribute="trailing" constant="30" id="Uik-th-lzq"/>
                             <constraint firstItem="tQL-Bl-nyr" firstAttribute="trailing" secondItem="09Y-OJ-b0F" secondAttribute="trailing" constant="30" id="Vv2-p4-PDi"/>
                             <constraint firstItem="tQL-Bl-nyr" firstAttribute="trailing" secondItem="Iop-Nd-vdV" secondAttribute="trailing" constant="30" id="lkr-gT-fhq"/>
-                            <constraint firstItem="Iop-Nd-vdV" firstAttribute="top" secondItem="tQL-Bl-nyr" secondAttribute="top" constant="40" id="vCp-3f-9Qw"/>
+                            <constraint firstItem="Iop-Nd-vdV" firstAttribute="top" secondItem="tQL-Bl-nyr" secondAttribute="top" constant="80" id="vCp-3f-9Qw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tQL-Bl-nyr"/>
                     </view>
