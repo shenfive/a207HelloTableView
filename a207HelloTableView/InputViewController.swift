@@ -22,10 +22,35 @@ class InputViewController: UIViewController {
     
     @IBAction func newContent(_ sender: Any) {
  
-        let alertView = UIAlertController.init(title: "告訴你", message: "這是訊息", preferredStyle: .alert)
-        let action = UIAlertAction.init(title: "我知道了", style: .default, handler: nil)
-        alertView.addAction(action)
-        self.present(alertView, animated: true, completion: nil)
+        // 檢查名字至少三碼
+        guard let name = nameTF.text else{
+            return
+        }
+        if name.count < 3 {
+            let alertView = UIAlertController.init(title: "告訴你", message: "名字至少三個", preferredStyle: .alert)
+             let action = UIAlertAction.init(title: "我知道了", style: .default, handler: nil)
+             alertView.addAction(action)
+             self.present(alertView, animated: true, completion: nil)
+             return
+        }
+        
+        guard let tel = telTF.text else{
+            return
+        }
+        if tel.count < 8 {
+            let alertView = UIAlertController.init(title: "告訴你", message: "電話至少九碼", preferredStyle: .alert)
+             let action = UIAlertAction.init(title: "我知道了", style: .default, handler: nil)
+             alertView.addAction(action)
+             self.present(alertView, animated: true, completion: nil)
+             return
+        }
+        
+        
+        
+        
+        
+        
+
         
     }
     
