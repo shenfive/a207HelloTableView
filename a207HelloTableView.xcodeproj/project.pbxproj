@@ -13,6 +13,7 @@
 		BAA5A9FE24DE5725000395BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA5A9FC24DE5725000395BE /* Main.storyboard */; };
 		BAA5AA0024DE5726000395BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA5A9FF24DE5726000395BE /* Assets.xcassets */; };
 		BAA5AA0324DE5726000395BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA5AA0124DE5726000395BE /* LaunchScreen.storyboard */; };
+		BAA5AA0B24DE6E64000395BE /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA5AA0A24DE6E64000395BE /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BAA5A9FF24DE5726000395BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAA5AA0224DE5726000395BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA5AA0424DE5726000395BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA5AA0A24DE6E64000395BE /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BAA5A9FF24DE5726000395BE /* Assets.xcassets */,
 				BAA5AA0124DE5726000395BE /* LaunchScreen.storyboard */,
 				BAA5AA0424DE5726000395BE /* Info.plist */,
+				BAA5AA0A24DE6E64000395BE /* MyTableViewCell.swift */,
 			);
 			path = a207HelloTableView;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAA5A9FB24DE5725000395BE /* ViewController.swift in Sources */,
+				BAA5AA0B24DE6E64000395BE /* MyTableViewCell.swift in Sources */,
 				BAA5A9F724DE5725000395BE /* AppDelegate.swift in Sources */,
 				BAA5A9F924DE5725000395BE /* SceneDelegate.swift in Sources */,
 			);

@@ -21,12 +21,12 @@ class ViewController: UIViewController,UITableViewDataSource {
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 5000
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.backgroundColor = UIColor.red
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell") as! MyTableViewCell
+        
         return cell
     }
     
